@@ -61,7 +61,6 @@ def find_search_exists(soup):
     # a['href] = link to page, a['title] = Title of page
     # Thanks wiki.gg! 
     search_exists = soup.find('p',attrs={'class':'mw-search-exists'})
-    print(search_exists)
     if search_exists:
         return search_exists.find('a') 
     
@@ -69,16 +68,11 @@ def find_did_you_mean(soup):
     did_you_mean = soup.find('a',attrs={'id':'mw-search-DYM-rewritten'}) # IF error, or no page, there's None
     if did_you_mean:
         return did_you_mean.find('em').text
-    
-def fetch_first_result(soup):
-    search_results = soup.find('ul',attrs={'class':'mw-search-results'})
-    if search_results: 
-        return search_results.find('a')
 
 def get_search_results(soup):
     results = []
     search_results = soup.find("body").find("ul", attrs={'class':'mw-search-results'}) 
-    n = 0
+    n = 0 ## Means it only returns the first 5. 
     for result in search_results:
         if n == 5:
             return results 
@@ -91,10 +85,11 @@ def get_search_results(soup):
                        'description':'',
                        'url':f'{WIKI_URL}{href}'}
 
+
         search_text = result.find('div',attrs={'class':'searchresult'}) # Matching Text
-        # ok this is UNHOLY. 
         search_text = strip_html(str(search_text))
         
+        #cursed slicing
         result_dict['description'] = search_text[:97] + '...'
 
         # Not necessary, but may come in useful some day :> 
