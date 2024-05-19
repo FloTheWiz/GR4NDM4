@@ -1,16 +1,9 @@
-<div id="top">
-[![Python][python-shield]][python-url]
-[![Issues][issues-shield]][issues-url]
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![MIT License][license-shield]][license-url]
-</div>
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Nekurone/Sakamoto">
-    <img src="https://i.kym-cdn.com/photos/images/newsfeed/000/708/396/3d6.gif" alt="Logo">
+  <a href="https://github.com/SneetSnart420/GR4NDM4">
+    <img src="https://i.imgur.com/U3Nyus7.gif)" alt="Logo">
   </a>
 <h1 align="center">GR4NDM4</h1>
   <p>
@@ -19,11 +12,11 @@
     <br />
     ---------------------------------------
     <br />
-    <a href="#about-the-project"><strong>View Demo</strong></a>
+    <a href="#about-the-project"><strong>About</strong></a>
     ·
-    <a href="https://github.com/Nekurone/Sakamoto/issues">Report Bug</a>
+    <a href="https://github.com/SneetSnart420/GR4NDM4/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Nekurone/Sakamoto/issues">Request Feature</a>
+    <a href="https://github.com/SneetSnart420/GR4NDM4/issues">Request Feature</a>
 </div>
 
 
