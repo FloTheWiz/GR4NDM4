@@ -1,16 +1,51 @@
+<div id="top">
+[![Python][python-shield]][python-url]
+[![Issues][issues-shield]][issues-url]
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![MIT License][license-shield]][license-url]
+</div>
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/Nekurone/Sakamoto">
+    <img src="https://i.kym-cdn.com/photos/images/newsfeed/000/708/396/3d6.gif" alt="Logo">
+  </a>
+<h1 align="center">GR4NDM4</h1>
+  <p>
+    A Discord Bot for the Cookie Clicker Discord server
+  </p>
+    <br />
+    ---------------------------------------
+    <br />
+    <a href="#about-the-project"><strong>View Demo</strong></a>
+    ·
+    <a href="https://github.com/Nekurone/Sakamoto/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Nekurone/Sakamoto/issues">Request Feature</a>
+</div>
+
+
+# About the Project
+
+GR4NDM4 intends to make use of Tags "[[ ]]" to allow quick hyperlinks to the [Cookie Clicker Wiki](https://cookieclicker.wiki.gg/)
+It's capable of doing this via searching and the use of a custom command framework.
+
+## TODO
+
+
 fix buttons Delete and Link to vanish/grey when they are used or not otherwise usable. 
 
 Possibly make them mod only? 
 
 Fix 502 throwing an error on searches 
 
-Make a pretty search embed
+Make a pretty search embed // 
 
 Rig up the Search Dropdown with the SearchView 
 
-Implement DYM and "RewrittenDYM", whatever that is. 
-
-Implement Cooldowns
+Implement DYM and "RewrittenDYM", whatever that is.
 
 Make sure to check for bot user on_message!!! 
 
