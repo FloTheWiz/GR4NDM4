@@ -43,10 +43,11 @@ class Wiki(commands.Cog):
             print("reducing CD")
             self.cd_dict['global'] -= 1 
         if self.cd_dict['global'] == 0 and len(self.cd_dict['msgs']) > 0:
-             for msg in self.cd_dict['msgs']:
+            for msg in self.cd_dict['msgs']:
                 mem= await msg.guild.fetch_member(self.client.user.id)
                 await msg.remove_reaction("❌",mem)
                 await msg.remove_reaction("⌛",mem)
+            self.cd_dict['msgs'] = []
 
     def cog_unload(self):
         self.reduce_cooldown.cancel()
@@ -182,7 +183,7 @@ class Wiki(commands.Cog):
             search_results = get_search_results(search_soup)
             if search_results:
                 first_result = search_results[0]
-                url = first_result['link']
+                url = first_result['url']
                 url_title = first_result['name']
                 if distance(url_title, tag) < len(tag) // 2 -1: # It's probably that.
                         await message.channel.send(url,view=view)
